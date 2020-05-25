@@ -1,0 +1,45 @@
+body,div,p,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,a,input,button,textarea,select{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+html,body{
+  font-family:Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  min-width: 1226px;
+  font-size: 12px;
+}
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+input{
+  font: normal;
+}
+input:focus,a:focus{
+  outline: none;
+}
+
+
+
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../css/iconfont.eot');
+  src: url('../css/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../css/iconfont.woff2') format('woff2'),
+      url('../css/iconfont.woff') format('woff'),
+      url('../css/iconfont.ttf') format('truetype'),
+      url('../css/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 1.5em;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

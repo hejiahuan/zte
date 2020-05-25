@@ -1,0 +1,36 @@
+//flex复用
+
+@mixin flex($align:center) {
+    display: flex;
+    justify-content: $align;
+    align-items: center;
+} 
+
+//做after，并且父类要position: relative;
+@mixin after($ml:5px,$top:3px,$height:12px,$boder:1.5px){
+    &::after {
+        position: absolute;
+        content: "";
+        margin-left: $ml;
+        top: $top;
+        height: $height;
+        border: $boder solid $border;
+    }
+}
+//和after一起用
+@mixin afterChildBorderNo(){
+    &:last-child {
+        &::after {
+          border: 0;
+        }
+      }
+}
+
+@mixin bgImg($w:0,$h:0,$img:'',$size:contain) {
+    display: inline-block;
+    width: $w;
+    height: $h;
+    background: url($img) no-repeat center;
+    background-size: $size;
+    
+}

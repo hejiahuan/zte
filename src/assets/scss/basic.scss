@@ -1,0 +1,18 @@
+/* 这个是把复用的东西抽取出来 */
+.container{
+    width: 1234px;
+    margin: 0 auto; 
+}
+
+
+.container_body{
+    background-color: #F5F5F5;
+}
+
+
+.min_width{
+    min-width: 1256px;
+}
+
+
+
